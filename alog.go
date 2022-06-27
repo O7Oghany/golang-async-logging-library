@@ -10,7 +10,6 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/go/callgraph/cha"
 )
 
 // Alog is a type that defines a logger. It can be used to write log messages synchronously (via the Write method)
