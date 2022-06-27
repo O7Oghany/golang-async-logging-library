@@ -81,7 +81,7 @@ func (al Alog) Stop() {
 // Write synchronously sends the message to the log output
 func (al Alog) Write(msg string) (int, error) {
 	al.m.Lock()
-	defer al.m.Unlock
+	defer al.m.Unlock()
 	res, err := al.dest.Write([]byte(al.formatMessage(msg)))
 	if err != nil{
 		go func(err error){
